@@ -33,12 +33,15 @@ mas install 1469774098 #QSpace (1.6.2)
 # Install other useful binaries.
 #brew install ack
 #brew install exiv2
-brew install wget autojump mycli p7zip unrar stormssh tmux vim aria2
+brew install wget autojump p7zip unrar stormssh vim aria2
 
 
 # Install ruby and python env
 brew install rbenv
 brew install pyenv
+
+# devops
+brew install awscli helm tmux mycli
 
 # Install casks
 # brew cask install sogouinput thunder youdao mplayerx teamviewer
@@ -47,7 +50,7 @@ brew install --cask -f iterm2 intellij-idea visual-studio-code setapp sourcetree
 # need
 brew install --cask -f docker alfred neteasemusic imazing pdf-expert microsoft-edge
 # tools
-brew install --cask -f adguard surge devonthink weiyun typora xmind-zen
+brew install --cask -f adguard surge devonthink typora xmind-zen teamviewer
 # large file
 brew install --cask -f microsoft-office parallels
 
@@ -62,8 +65,6 @@ brew install gradle
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-#!/usr/bin/env bash
 
 # zsh
 git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
