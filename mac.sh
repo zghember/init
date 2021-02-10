@@ -30,18 +30,18 @@ mas install 836500024 #微信 (2.3.25)
 mas install 441258766 #Magnet (2.4.5)
 mas install 1469774098 #QSpace (1.6.2)
 
-# Install other useful binaries.
-#brew install ack
-#brew install exiv2
-brew install wget autojump p7zip unrar stormssh vim aria2
-
-
 # Install ruby and python env
 brew install rbenv
 brew install pyenv
 
+# useful binaries
+brew install wget p7zip unrar vim aria2
+# command line tools
+brew install exa autojump stormssh ack
 # devops
 brew install awscli helm tmux mycli
+# develop
+brew install jadx apktool
 
 # Install casks
 # brew cask install sogouinput thunder youdao mplayerx teamviewer
