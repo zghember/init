@@ -31,7 +31,7 @@ mas install 441258766 #Magnet (2.4.5)
 mas install 1469774098 #QSpace (1.6.2)
 
 # Install ruby and python env
-brew install rbenv
+#brew install rbenv
 brew install pyenv
 
 # useful binaries
@@ -39,16 +39,18 @@ brew install wget p7zip unrar vim aria2
 # command line tools
 brew install exa autojump stormssh ack
 # devops
-brew install awscli helm tmux mycli
+brew install tmux mycli
+# cloud tools
+# brew install awscli helm
 # develop
-brew install jadx apktool
+# brew install jadx apktool
 
 # Install casks
 # brew cask install sogouinput thunder youdao mplayerx teamviewer
 # coding
 brew install --cask -f iterm2 intellij-idea visual-studio-code setapp sourcetree
 # need
-brew install --cask -f docker alfred neteasemusic imazing pdf-expert microsoft-edge
+brew install --cask -f docker alfred neteasemusic imazing pdf-expert microsoft-edge rar
 # tools
 brew install --cask -f adguard surge devonthink typora xmind-zen teamviewer
 # large file
@@ -56,28 +58,14 @@ brew install --cask -f microsoft-office parallels
 
 # fonts
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 # jdk
 brew tap adoptopenjdk/openjdk
-brew cask install adoptopenjdk adoptopenjdk8
+brew install --cask adoptopenjdk adoptopenjdk8
 brew install gradle
 
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-# zsh
-git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
-# zsh theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-# zsh plugin
-git clone "https://github.com/zsh-users/zsh-syntax-highlighting" "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
-git clone "https://github.com/zsh-users/zsh-autosuggestions" "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
-
-# colorls
-rbenv install 3.0.0
-eval "$(rbenv init -)"
-rbenv global 3.0.0
-gem install colorls
 
 # git clone https://github.com/mbadolato/iTerm2-Color-Schemes ~/.iterm2
