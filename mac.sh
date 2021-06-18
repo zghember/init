@@ -48,7 +48,7 @@ brew install tmux mycli
 # Install casks
 # brew cask install sogouinput thunder youdao mplayerx teamviewer
 # coding
-brew install --cask -f iterm2 intellij-idea visual-studio-code setapp sourcetree
+brew install --cask -f iterm2 intellij-idea visual-studio-code setapp sourcetree edrawmax
 # need
 brew install --cask -f docker alfred neteasemusic imazing pdf-expert microsoft-edge rar
 # tools
