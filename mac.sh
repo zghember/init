@@ -24,7 +24,7 @@ brew install --cask 1password
 # before casks, install mac app store app
 brew install mas
 mas install 1289197285 #MindNode (6.0.3)
-mas install 966085870 #滴答清单 (3.1.00)
+# mas install 966085870 #滴答清单 (3.1.00)
 mas install 1176895641 #Spark (2.3.6)
 mas install 836500024 #微信 (2.3.25)
 mas install 441258766 #Magnet (2.4.5)
@@ -46,13 +46,13 @@ brew install tmux mycli
 # brew install jadx apktool
 
 # Install casks
-# brew cask install sogouinput thunder youdao mplayerx teamviewer
+brew install --cask -f lark sogouinput thunder
 # coding
-brew install --cask -f iterm2 intellij-idea visual-studio-code setapp sourcetree edrawmax
+brew install --cask -f iterm2 intellij-idea visual-studio-code setapp sourcetree
 # need
 brew install --cask -f docker alfred neteasemusic imazing pdf-expert microsoft-edge rar
 # tools
-brew install --cask -f adguard surge devonthink typora xmind-zen teamviewer
+brew install --cask -f adguard surge typora xmind todesk
 # large file
 brew install --cask -f microsoft-office parallels
 
@@ -60,9 +60,7 @@ brew install --cask -f microsoft-office parallels
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 # jdk
-brew tap adoptopenjdk/openjdk
-brew install --cask adoptopenjdk adoptopenjdk8
-brew install gradle
+brew install temurin
 
 
 # Remove outdated versions from the cellar.
