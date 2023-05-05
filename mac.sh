@@ -23,12 +23,18 @@ brew install --cask 1password
 
 # before casks, install mac app store app
 brew install mas
+mas install 441258766   #Magnet                    (2.11.0)
+mas install 1295203466  #Microsoft Remote Desktop  (10.8.2)
+mas install 1487937127  #Craft                     (2.5.3)
+mas install 1189898970  #企业微信                      (4.1.3)
+mas install 1435957248  #Drafts                    (38.0.1)
+mas install 1265704574  #Bandizip                  (7.22)
+mas install 1477373845  #Fiery Feeds               (2.6.7)
+mas install 1469774098  #QSpace                    (3.2.5)
+mas install 1176895641  #Spark                     (2.11.29)
+mas install 1289197285  #MindNode                  (2023.1.1)
+mas install 966085870   #滴答清单                      (4.5.01)
 mas install 1289197285 #MindNode (6.0.3)
-# mas install 966085870 #滴答清单 (3.1.00)
-mas install 1176895641 #Spark (2.3.6)
-mas install 836500024 #微信 (2.3.25)
-mas install 441258766 #Magnet (2.4.5)
-mas install 1469774098 #QSpace (1.6.2)
 
 # Install ruby and python env
 #brew install rbenv
@@ -46,11 +52,11 @@ brew install tmux mycli
 # brew install jadx apktool
 
 # Install casks
-brew install --cask -f lark sogouinput thunder
+brew install --cask -f wechat lark sogouinput thunder
 # coding
 brew install --cask -f iterm2 intellij-idea visual-studio-code setapp sourcetree
 # need
-brew install --cask -f docker alfred neteasemusic imazing pdf-expert microsoft-edge rar
+brew install --cask -f docker alfred neteasemusic qqmusic imazing pdf-expert microsoft-edge rar
 # tools
 brew install --cask -f adguard surge typora xmind todesk
 # large file
