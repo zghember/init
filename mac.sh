@@ -37,23 +37,24 @@ mas install 966085870   #滴答清单                      (4.5.01)
 brew install pyenv
 
 # useful binaries
-brew install -f wget vim aria2
+brew install -f wget vim aria2 p7zip
 # command line tools
 brew install -f exa autojump stormssh ack
 # devops
 brew install -f tmux mycli
 
 # Install casks
-brew install --cask -f wechat wechatwork lark sogouinput thunder rar arc bilibili
+# must install
+brew install --cask -f wechat lark arc qqmusic bilibili
+brew install --cask -f rar adguard todesk typora surge flomo notion
 # coding
-brew install --cask -f iterm2 intellij-idea visual-studio-code sourcetree
+brew install --cask -f iterm2 jetbrain-tool-box visual-studio-code sourcetree
 # need
-brew install --cask -f docker alfred neteasemusic qqmusic imazing pdf-expert
-brew install --cask -f bartender timing cleanshot hazeover qq
+brew install --cask -f bartender wechatwork qq docker alfred neteasemusic
 # tools
-brew install --cask -f adguard surge typora todesk baidunetdisk cleanmymac-zh
+brew install --cask -f timing thunder cleanshot pdf-expert imazing hazeover
 # large file
-brew install --cask -f microsoft-office parallels
+brew install --cask -f parallels
 
 # fonts
 brew tap homebrew/cask-fonts
