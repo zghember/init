@@ -45,12 +45,12 @@ brew install -f tmux mycli
 
 # Install casks
 # must install
-brew install --cask -f wechat lark arc qqmusic bilibili
+brew install --cask -f wechat lark arc qqmusic bilibili onedrive
 brew install --cask -f rar adguard todesk typora surge flomo notion
 # coding
 brew install --cask -f iterm2 jetbrain-tool-box visual-studio-code sourcetree
 # need
-brew install --cask -f bartender wechatwork qq docker alfred neteasemusic
+brew install --cask -f bartender wechatwork qq docker alfred iina neteasemusic
 # tools
 brew install --cask -f timing thunder cleanshot pdf-expert imazing hazeover
 # large file
