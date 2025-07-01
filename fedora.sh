@@ -1,6 +1,6 @@
 #!/bin/sh
 # =============================== dev ==================================
-dnf -y install git vim tmux zsh exa patch g++ cmake webkit2gtk4.1-devel gtk3-devel libappindicator-gtk3-devel librsvg2-devel patchelf @development-tools openssl-devel libxdo-devel libsoup3-devel javascriptcoregtk4.1-devel
+dnf -y install git vim tmux zsh patch g++ cmake webkit2gtk4.1-devel gtk3-devel libappindicator-gtk3-devel librsvg2-devel patchelf @development-tools openssl-devel libxdo-devel libsoup3-devel javascriptcoregtk4.1-devel
 
 # jdk
 dnf -y install java-21-openjdk
@@ -25,6 +25,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Install bun
 curl -fsSL https://bun.sh/install | bash
 npm install -g @anthropic-ai/claude-code
+git clone https://github.com/getAsterisk/claudia.git
 
 # =============================== server ==================================
 # docker
