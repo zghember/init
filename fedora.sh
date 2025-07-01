@@ -21,6 +21,11 @@ fnm install 22
 # rust & cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+# claude && claudia && bun
+# Install bun
+curl -fsSL https://bun.sh/install | bash
+npm install -g @anthropic-ai/claude-code
+
 # =============================== server ==================================
 # docker
 dnf -y install docker docker-compose
