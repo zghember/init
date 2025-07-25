@@ -30,13 +30,13 @@ brew install -f autojump stormssh ack tmux
 # Install casks
 # must install
 brew install --cask -f wechat lark arc qqmusic bilibili onedrive
-brew install --cask -f rar adguard todesk typora surge flomo notion
+brew install --cask -f rar adguard todesk typora surge flomo notion clash-verge-rev
 # coding
 brew install --cask -f iterm2 jetbrains-toolbox cursor sourcetree
 # need
-brew install --cask -f bartender wechatwork qq docker alfred iina neteasemusic
+brew install --cask -f wechatwork qq docker alfred iina neteasemusic
 # tools
-brew install --cask -f timing thunder cleanshot pdf-expert imazing hazeover
+brew install --cask -f timing thunder cleanshot pdf-expert imazing
 # large file
 brew install --cask -f parallels
 
