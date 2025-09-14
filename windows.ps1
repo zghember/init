@@ -12,6 +12,7 @@ choco install -y github-desktop
 choco install -y git
 choco install -y oh-my-posh
 choco install -y gsudu
+choco install -y bandizip
 Install-Module -Name PowerShellGet -Force
 Install-Module PSReadLine -AllowPrerelease -Force
 Install-Module ZLocation -Scope CurrentUser
