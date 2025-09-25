@@ -1,5 +1,7 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop install git
+
 scoop bucket add extras
 scoop bucket add versions
 scoop bucket add java
@@ -14,10 +16,22 @@ scoop bucket add tomato https://github.com/zhoujin7/tomato.git
 scoop bucket add scoop-zapps https://github.com/kkzzhizhou/scoop-zapps.git
 scoop update 
 
-scoop install qq wechat qqmusic feishu telegram
-scoop install powertoys rustdesk github cursor  
-scoop install pwsh oh-my-posh rustup-msvc rust-msvc
-scoop install temurin21-jdk git nodejs-lts maven gradle
+scoop install qqnt
+scoop install wechat
+scoop install qqmusic
+scoop install feishu
+scoop install telegram
+scoop install powertoys
+scoop install rustdesk
+scoop install github
+scoop install cursor  
+scoop install pwsh
+scoop install oh-my-posh
+scoop install rustup-msvc
+scoop install rust-msvc
+scoop install temurin21-jdk
+scoop install nodejs-lts
+scoop install maven gradle
 # scoop install temurin25-jdk
 scoop install jetbrains-toolbox
 scoop install bandizip nanazip
