@@ -14,18 +14,22 @@ scoop bucket add tomato https://github.com/zhoujin7/tomato.git
 scoop bucket add scoop-zapps https://github.com/kkzzhizhou/scoop-zapps.git
 scoop update 
 
-scoop install powertoys rustdesk github
+scoop install qq wechat qqmusic feishu telegram
+scoop install powertoys rustdesk github cursor  
 scoop install pwsh oh-my-posh rustup-msvc rust-msvc
 scoop install temurin21-jdk git nodejs-lts maven gradle
 # scoop install temurin25-jdk
 scoop install jetbrains-toolbox
 scoop install bandizip nanazip
 scoop install redis mariadb
-scoop install 
+scoop install nvidia-display-driver-np
+
 
 Install-Module -Name PowerShellGet -Force
 Install-Module PSReadLine -AllowPrerelease -Force
 Install-Module ZLocation -Scope CurrentUser
+
+scoop install office-365-apps-np imazing
 
 powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
 # choco install -y gsudu
