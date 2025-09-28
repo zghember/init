@@ -35,7 +35,7 @@ scoop install maven gradle
 # scoop install temurin25-jdk
 scoop install jetbrains-toolbox
 scoop install bandizip nanazip
-scoop install redis mariadb
+scoop install redis mariadb another-redis-desktop-manager
 scoop install nvidia-display-driver-np
 
 
