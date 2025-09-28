@@ -1,5 +1,6 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop config gh_token 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
 scoop install git
 
 scoop bucket add extras
