@@ -1,0 +1,10 @@
+[Adguard Custom]
+! Title: Coca URL Blocker
+! Description: Block specific API endpoints
+! Homepage: https://github.com/yourname/coca-filter
+! License: MIT
+! Last modified: 2025-11-26
+! Version: 1.0.0
+
+! Block version check endpoint
+||api-prod.coca.xyz/version/data.json^$important
