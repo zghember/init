@@ -8,3 +8,4 @@
 
 ! Block version check endpoint
 ||api-prod.coca.xyz/version/data.json^$important
+||api-prod.coca.xyz/version/^$important
