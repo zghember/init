@@ -6,7 +6,6 @@
 pyenv
 rust
 node
-temurin17
 
 # === Command line utilities ===
 wget
@@ -14,6 +13,5 @@ vim
 aria2
 p7zip
 autojump
-stormssh
 ack
 tmux

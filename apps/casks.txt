@@ -4,28 +4,28 @@
 
 # === Essential applications ===
 wechat
+telegram
 lark
 arc
 qqmusic
 bilibili
-onedrive
 rar
 adguard
-todesk
 typora
-surge
-flomo
-notion
 clash-verge-rev
 
 # === Development applications ===
+font-maple-mono
+font-maple-mono-nf
+font-maple-mono-nf-cn
 iterm2
 jetbrains-toolbox
-cursor
-sourcetree
+visual-studio-code
+github
+reqable
 
 # === Productivity applications ===
-wechatwork
+google-chrome
 qq
 docker
 alfred
