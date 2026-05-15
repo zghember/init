@@ -1,0 +1,8 @@
+# Mac App Store apps to install.
+# Format: <app_id> <display name>
+# Lines starting with `#` and blank lines are ignored.
+# Find an app's ID with: mas search "<name>"
+
+1487937127  Craft
+1435957248  Drafts
+1265704574  Bandizip

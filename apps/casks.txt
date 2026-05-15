@@ -1,0 +1,43 @@
+# Homebrew casks to install.
+# One per line. Lines starting with `#` and blank lines are ignored.
+# Anything from `#` to end-of-line is treated as a comment.
+
+# === Essential applications ===
+wechat
+lark
+arc
+qqmusic
+bilibili
+onedrive
+rar
+adguard
+todesk
+typora
+surge
+flomo
+notion
+clash-verge-rev
+
+# === Development applications ===
+iterm2
+jetbrains-toolbox
+cursor
+sourcetree
+
+# === Productivity applications ===
+wechatwork
+qq
+docker
+alfred
+iina
+neteasemusic
+
+# === Utility applications ===
+timing
+thunder
+cleanshot
+pdf-expert
+imazing
+
+# === Large applications (slow to install) ===
+parallels

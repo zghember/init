@@ -1,0 +1,19 @@
+# Homebrew formulae to install.
+# One per line. Lines starting with `#` and blank lines are ignored.
+# Anything from `#` to end-of-line is treated as a comment.
+
+# === Development tools ===
+pyenv
+rust
+node
+temurin17
+
+# === Command line utilities ===
+wget
+vim
+aria2
+p7zip
+autojump
+stormssh
+ack
+tmux
