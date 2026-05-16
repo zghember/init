@@ -23,6 +23,9 @@ jetbrains-toolbox
 visual-studio-code
 github
 reqable
+codex-app
+claude
+claude-code
 
 # === Productivity applications ===
 google-chrome
