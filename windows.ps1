@@ -1,20 +1,15 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-scoop config gh_token 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
 scoop install git
 
 scoop bucket add extras
 scoop bucket add versions
 scoop bucket add java
 scoop bucket add nonportable
+scoop bucket add nerd-fonts
 
 scoop bucket add aki https://github.com/akirco/aki-apps.git
 scoop bucket add dorado https://github.com/chawyehsu/dorado.git
-scoop bucket add echo https://github.com/echoiron/echo-scoop.git
-scoop bucket add lemon https://github.com/hoilc/scoop-lemon.git
-scoop bucket add scoopet https://github.com/ivaquero/scoopet.git
-scoop bucket add tomato https://github.com/zhoujin7/tomato.git
-scoop bucket add scoop-zapps https://github.com/kkzzhizhou/scoop-zapps.git
 scoop update 
 
 scoop install qqnt
@@ -28,6 +23,7 @@ scoop install github
 scoop install cursor  
 scoop install pwsh
 scoop install oh-my-posh
+scoop install Hack-NF Maple-Mono-NF-CN
 scoop install rustup-msvc
 scoop install rust-msvc
 scoop install temurin21-jdk
@@ -37,14 +33,41 @@ scoop install maven gradle
 scoop install jetbrains-toolbox
 scoop install bandizip nanazip
 scoop install redis mariadb another-redis-desktop-manager
-scoop install nvidia-display-driver-np
+scoop install twinkle-tray reqable winrar
 
 
 Install-Module -Name PowerShellGet -Force
 Install-Module PSReadLine -AllowPrerelease -Force
 Install-Module ZLocation -Scope CurrentUser
 
+# PowerShell profile：pwsh 和 Windows PowerShell 各放一份，内容在仓库的 Microsoft.PowerShell_profile.ps1
+$root = if ($PSScriptRoot) { $PSScriptRoot } else { $PWD.Path }
+$docs = [Environment]::GetFolderPath('MyDocuments')
+foreach ($d in "$docs\PowerShell", "$docs\WindowsPowerShell") {
+    New-Item -ItemType Directory -Force $d | Out-Null
+    Copy-Item "$root\Microsoft.PowerShell_profile.ps1" "$d\Microsoft.PowerShell_profile.ps1" -Force
+}
+
+# Windows Terminal 默认字体改成 Nerd Font，否则 oh-my-posh 的图标显示成方块
+$wt = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+if (Test-Path $wt) {
+    $json = ((Get-Content $wt -Raw) -replace '(?m)^\s*//.*$', '') | ConvertFrom-Json
+} else {
+    New-Item -ItemType Directory -Force (Split-Path $wt) | Out-Null
+    $json = [pscustomobject]@{ '$schema' = 'https://aka.ms/terminal-profiles-schema'; profiles = [pscustomobject]@{ defaults = [pscustomobject]@{} } }
+}
+if (-not $json.profiles) { $json | Add-Member -NotePropertyName profiles -NotePropertyValue ([pscustomobject]@{ defaults = [pscustomobject]@{} }) }
+if (-not $json.profiles.defaults) { $json.profiles | Add-Member -NotePropertyName defaults -NotePropertyValue ([pscustomobject]@{}) }
+if ($json.profiles.defaults.font) { $json.profiles.defaults.font | Add-Member -NotePropertyName face -NotePropertyValue 'Maple Mono NF CN' -Force }
+else { $json.profiles.defaults | Add-Member -NotePropertyName font -NotePropertyValue ([pscustomobject]@{ face = 'Maple Mono NF CN' }) }
+$json | ConvertTo-Json -Depth 32 | Set-Content $wt -Encoding UTF8
+
 scoop install office-365-apps-np imazing
 
-powershell -c "irm https://community.chocolatey.org/install.ps1|iex"
-# choco install -y gsudu
+scoop install gsudo topgrade
+
+# 不进 scoop、交给 winget 管理的
+winget install -e --id Tencent.TencentMeeting --accept-package-agreements --accept-source-agreements
+winget install -e --id Baidu.BaiduNetdisk --accept-package-agreements --accept-source-agreements
+winget install -e --id NetEase.UURemote --accept-package-agreements --accept-source-agreements
+winget install -e --id ByteDance.Lark --accept-package-agreements --accept-source-agreements
