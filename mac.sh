@@ -7,6 +7,7 @@
 #   apps/formulae.txt   Homebrew formulae
 #   apps/casks.txt      Homebrew casks
 #   apps/mas.txt        Mac App Store apps (format: "<id> <name>")
+#   apps/npm.txt        npm global packages
 #
 # Inside those files, `#` starts a comment and blank lines are ignored, so
 # you can comment a line out to temporarily skip an app.
@@ -56,6 +57,15 @@ install_mas_app() {
     fi
 }
 
+install_npm_package() {
+    local pkg="$1"
+    log "Installing npm global package: $pkg"
+    if ! npm install -g "$pkg"; then
+        log "Warning: Failed to install npm package '$pkg'"
+        failed_installs+=("npm install -g $pkg")
+    fi
+}
+
 # Read a list file, yielding one non-comment, non-blank, trimmed line at a
 # time on stdout. `#` to end-of-line is stripped, so inline comments work.
 read_list() {
@@ -81,6 +91,14 @@ install_casks_from() {
     local pkg
     while IFS= read -r pkg; do
         install_cask "$pkg"
+    done < <(read_list "$file")
+}
+
+install_npm_from() {
+    local file="$1"
+    local pkg
+    while IFS= read -r pkg; do
+        install_npm_package "$pkg"
     done < <(read_list "$file")
 }
 
@@ -163,6 +181,9 @@ install_formulae_from "$APPS_DIR/formulae.txt"
 
 log "Installing Homebrew casks from $APPS_DIR/casks.txt..."
 install_casks_from "$APPS_DIR/casks.txt"
+
+log "Installing npm global packages from $APPS_DIR/npm.txt..."
+install_npm_from "$APPS_DIR/npm.txt"
 
 # Cleanup
 log "Cleaning up Homebrew..."

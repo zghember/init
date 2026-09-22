@@ -6,6 +6,8 @@
 wechat
 telegram
 lark
+feishu
+tencent-meeting
 arc
 qqmusic
 bilibili
@@ -13,27 +15,40 @@ rar
 adguard
 typora
 clash-verge-rev
+surge
+chatgpt
 
 # === Development applications ===
 font-maple-mono
 font-maple-mono-nf
 font-maple-mono-nf-cn
+font-meslo-lg-nerd-font   # recommended by powerlevel10k
 iterm2
+ghostty
 jetbrains-toolbox
+# datagrip / intellij-idea / rustrover are managed by JetBrains Toolbox
 visual-studio-code
 github
 reqable
 codex-app
+codex           # Codex CLI
 claude
 claude-code
+cc-switch
+android-platform-tools
+temurin@25
+lens
 
 # === Productivity applications ===
 google-chrome
+microsoft-edge
+firefox
 qq
-docker
+docker-desktop  # formerly `docker`
 alfred
 iina
 neteasemusic
+setapp          # Bartender / HazeOver / Paste come from Setapp
 
 # === Utility applications ===
 timing
@@ -41,6 +56,17 @@ thunder
 cleanshot
 pdf-expert
 imazing
+cleanmymac
+uuremote
 
 # === Large applications (slow to install) ===
 parallels
+
+# === No Homebrew cask, install manually ===
+# AdsPower Global
+# AutoClaw
+# evol
+# GeeLark
+# Hubstudio
+# Octo Browser
+# ToDesk

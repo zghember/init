@@ -5,7 +5,20 @@
 # === Development tools ===
 pyenv
 rust
+# rustup        # conflicts with `rust`, pick one
 node
+pnpm
+bun
+go
+gradle
+maven
+llvm@21         # large download
+gemini-cli
+
+# === Databases / services ===
+mysql
+mysql-client
+redis
 
 # === Command line utilities ===
 wget
@@ -15,3 +28,12 @@ p7zip
 autojump
 ack
 tmux
+jq
+ripgrep
+pandoc
+hexo
+bash            # newer than the macOS built-in bash 3.2
+curl
+bc
+bind            # dig / nslookup
+netcat

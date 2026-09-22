@@ -1,0 +1,7 @@
+# npm global packages to install (needs `node` from apps/formulae.txt).
+# One per line. Lines starting with `#` and blank lines are ignored.
+# Anything from `#` to end-of-line is treated as a comment.
+# Prefer Homebrew when a formula/cask exists (e.g. gemini-cli, codex).
+
+@88code/byebyecode
+elegant-router
