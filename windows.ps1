@@ -48,7 +48,7 @@ foreach ($d in "$docs\PowerShell", "$docs\WindowsPowerShell") {
     Copy-Item "$root\Microsoft.PowerShell_profile.ps1" "$d\Microsoft.PowerShell_profile.ps1" -Force
 }
 
-# Windows Terminal 默认字体改成 Nerd Font，否则 oh-my-posh 的图标显示成方块
+# Windows Terminal：默认 shell 改成 pwsh，默认字体改成 Nerd Font（否则 oh-my-posh 的图标显示成方块）
 $wt = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 if (Test-Path $wt) {
     $json = ((Get-Content $wt -Raw) -replace '(?m)^\s*//.*$', '') | ConvertFrom-Json
@@ -60,6 +60,9 @@ if (-not $json.profiles) { $json | Add-Member -NotePropertyName profiles -NotePr
 if (-not $json.profiles.defaults) { $json.profiles | Add-Member -NotePropertyName defaults -NotePropertyValue ([pscustomobject]@{}) }
 if ($json.profiles.defaults.font) { $json.profiles.defaults.font | Add-Member -NotePropertyName face -NotePropertyValue 'Maple Mono NF CN' -Force }
 else { $json.profiles.defaults | Add-Member -NotePropertyName font -NotePropertyValue ([pscustomobject]@{ face = 'Maple Mono NF CN' }) }
+# 默认 shell：{574e775e-...} 是 Terminal 给自动检测到的 PowerShell 7 固定分配的 GUID（source = Windows.Terminal.PowershellCore），
+# scoop 装的 pwsh 也会被检测到，所以不用手写 profile；Terminal 下次启动生成该 profile 后即生效
+$json | Add-Member -NotePropertyName defaultProfile -NotePropertyValue '{574e775e-4f2a-5b96-ac1e-a2962a402336}' -Force
 $json | ConvertTo-Json -Depth 32 | Set-Content $wt -Encoding UTF8
 
 scoop install office-365-apps-np imazing
