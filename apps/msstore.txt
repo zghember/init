@@ -1,0 +1,8 @@
+# Microsoft Store apps, installed through `winget install --source msstore`.
+# Format: <store id> <display name>
+# Lines starting with `#` and blank lines are ignored.
+# Find an app's id with: winget search "<name>" --source msstore
+# 注意商店里有同名山寨货，加之前用 winget show --id <id> -s msstore 看一眼发布者。
+
+XPDDRBQ2D1N7NJ  向日葵远程控制          # 上海贝锐
+9PLM9XGG6VKS    ChatGPT                 # OpenAI，桌面版 ChatGPT/Codex，装出来的包名是 OpenAI.Codex

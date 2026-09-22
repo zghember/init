@@ -1,0 +1,49 @@
+# scoop apps to install.
+# One per line. Lines starting with `#` and blank lines are ignored.
+# Anything from `#` to end-of-line is treated as a comment.
+# git is installed by windows.ps1 itself before the buckets are added.
+
+# === Shell & terminal ===
+pwsh
+oh-my-posh
+Hack-NF
+Maple-Mono-NF-CN
+
+# === System utilities ===
+topgrade
+powertoys
+twinkle-tray
+bandizip
+nanazip
+winrar
+rustdesk
+
+# === Dev toolchains ===
+rustup-msvc          # cargo/rustc 由 rustup 管理；MSVC 链接器来自 apps/winget.txt 里的 VS Build Tools
+temurin21-jdk
+# temurin25-jdk
+nodejs-lts
+python
+go
+maven
+gradle
+adb
+
+# === Dev apps ===
+jetbrains-toolbox
+cursor
+github
+reqable
+redis
+mariadb
+another-redis-desktop-manager
+
+# === IM & media ===
+qqnt                 # dorado bucket
+wechat
+qqmusic              # aki bucket
+feishu               # aki bucket
+telegram
+
+# === Office ===
+office-365-apps-np

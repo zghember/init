@@ -1,0 +1,31 @@
+# winget packages to install (source: winget).
+# Format: <id> [--pin] [extra `winget install` arguments]
+#   --pin  run `winget pin add` after installing, so `topgrade` / `winget upgrade --all`
+#          leaves the app alone and it keeps updating itself.
+# Lines starting with `#` and blank lines are ignored.
+
+# === Dev dependencies ===
+Microsoft.VisualStudio.2022.BuildTools --override "--passive --wait --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended"   # rustup 的 MSVC 工具链需要 C++ 工作负载
+Microsoft.WSL
+
+# === Utilities ===
+DigiDNA.iMazing
+
+# === 国内软件，不进 scoop ===
+Tencent.TencentMeeting
+Baidu.BaiduNetdisk
+NetEase.UURemote
+ByteDance.Lark
+NetEase.CloudMusic
+Tencent.WeType
+Tencent.WeSing
+YY.YY
+123.123pan
+Bilibili.Livehime
+
+# === Self-updating apps (first install only) ===
+ClashVergeRev.ClashVergeRev --pin   # 系统代理 127.0.0.1:7897，自更新；pin 住避免 topgrade 升级时中途重启它
+AgileBits.1Password
+TheBrowserCompany.Arc
+AdsPower.AdsPower
+Valve.Steam                         # 现有机器的 Steam 在 E:\games\steam 且未注册到卸载列表，在那台机器上重跑会装出第二份

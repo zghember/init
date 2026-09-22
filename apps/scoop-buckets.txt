@@ -1,0 +1,11 @@
+# scoop buckets to add.
+# Format: <name> [<git url>]   -- the url is only needed for non-official buckets.
+# Lines starting with `#` and blank lines are ignored.
+
+extras
+versions
+java
+nonportable
+nerd-fonts
+aki     https://github.com/akirco/aki-apps.git     # 国内软件：feishu、qqmusic
+dorado  https://github.com/chawyehsu/dorado.git    # 国内软件：qqnt

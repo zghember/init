@@ -1,0 +1,34 @@
+# Software that has no scoop / winget / Store package and is installed by hand.
+# This file is only a memo; windows.ps1 never touches it.
+
+# === Music production ===
+PreSonus Studio One 7
+FabFilter Total Bundle
+Softube Tube-Tech CL 1B
+Solid State Logic Native Bus Compressor 2
+Valhalla DSP bundle
+Slate Digital Fresh Air
+Antares AVOX
+Apogee USB Audio Driver + Apogee Control 2 (Symphony Desktop)
+WDM2VST
+
+# === Hardware & drivers ===
+NVIDIA graphics driver
+HYTE Nexus
+ASUS Armoury Crate      # Microsoft Store
+HP Smart                # Microsoft Store, printer
+PawnIO                  # installed by hardware-monitoring tools
+
+# === Work tools ===
+IDA Professional        # Hex-Rays, licensed
+Octo Browser
+GeeLark
+BitBrowser
+
+# === Games ===
+Steam library: E:\games\steam
+Hearthstone (Battle.net)
+
+# === Misc ===
+网易 UU加速器           # 官网 uu.163.com；商店里的「UU加速器」是杭州播播科技的山寨货
+工行 U 盾 (ICBC Feitian InterPass3000)
