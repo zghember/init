@@ -7,3 +7,4 @@
 1435957248  Drafts
 1265704574  Bandizip
 1295203466  Windows App
+# 1339170533  CleanMyMac    # App Store build (shows up as "CleanMyMac X"); pick this or the `cleanmymac` cask, not both

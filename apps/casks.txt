@@ -4,6 +4,7 @@
 
 # === Essential applications ===
 wechat
+wetype          # 微信输入法, installs into /Library/Input Methods
 telegram
 lark
 feishu
@@ -34,6 +35,7 @@ codex-app
 codex           # Codex CLI
 claude
 claude-code
+# cursor-cli    # Cursor Agent CLI; its curl installer left a broken ~/.local/bin/cursor-agent
 cc-switch
 android-platform-tools
 temurin@25
@@ -44,7 +46,6 @@ google-chrome
 microsoft-edge
 firefox
 qq
-docker-desktop  # formerly `docker`
 alfred
 iina
 neteasemusic
@@ -69,4 +70,3 @@ parallels
 # GeeLark
 # Hubstudio
 # Octo Browser
-# ToDesk

@@ -4,20 +4,23 @@
 
 # === Development tools ===
 pyenv
-rust
-# rustup        # conflicts with `rust`, pick one
+rustup          # keg-only: put "$(brew --prefix rustup)/bin" in PATH, then `rustup default stable`
 node
 pnpm
 bun
 go
+govulncheck     # Go vulnerability scanner (was `go install`ed by hand)
 gradle
 maven
 llvm@21         # large download
 gemini-cli
+gh              # GitHub CLI
+awscli
 
 # === Databases / services ===
 mysql
 mysql-client
+mycli           # .zshrc aliases mysql=mycli
 redis
 
 # === Command line utilities ===
@@ -37,3 +40,6 @@ curl
 bc
 bind            # dig / nslookup
 netcat
+
+# === No Homebrew formula, install by script ===
+# droid (Factory CLI):  curl -fsSL https://app.factory.ai/cli | sh
