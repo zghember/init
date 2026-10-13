@@ -1,6 +1,9 @@
 # Homebrew formulae to install.
 # One per line. Lines starting with `#` and blank lines are ignored.
 # Anything from `#` to end-of-line is treated as a comment.
+# `# === Title ===` starts a section in the mac.sh picker.
+# Prefix an entry with `?` to make it optional: the picker shows it unchecked
+# and `mac.sh --yes` skips it.
 
 # === Development tools ===
 pyenv

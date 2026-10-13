@@ -1,10 +1,13 @@
 # Mac App Store apps to install.
 # Format: <app_id> <display name>
 # Lines starting with `#` and blank lines are ignored.
+# `# === Title ===` starts a section in the mac.sh picker.
+# Prefix an entry with `?` to make it optional: the picker shows it unchecked
+# and `mac.sh --yes` skips it.
 # Find an app's ID with: mas search "<name>"
 
 1487937127  Craft
 1435957248  Drafts
 1265704574  Bandizip
 1295203466  Windows App
-# 1339170533  CleanMyMac    # App Store build (shows up as "CleanMyMac X"); pick this or the `cleanmymac` cask, not both
+?1339170533  CleanMyMac   # App Store build (shows up as "CleanMyMac X"); pick this or the `cleanmymac` cask, not both
